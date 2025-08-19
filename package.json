@@ -1,0 +1,11 @@
+{
+    "name": "ozzy-website-unoficial",
+    "version": "1.0.0",
+    "scripts": {
+        "sass": "sass --watch sass/styles.scss:css/styles.css --style compressed"
+    },
+    "keywords": [],
+    "author": "Franccesco Bordon",
+    "license": "MIT",
+    "description": ""
+}

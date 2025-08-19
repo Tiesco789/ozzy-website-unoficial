@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ozzy Osbourne • Dark Tribute</title>
+    <meta name="description"
+        content="Tributo dark inspirado em Ozzy Osbourne: estética gótica, animações sutis e seções temáticas." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="#hero" aria-label="Voltar ao topo">
+                <span class="brand-main">OZZY</span>
+                <span class="brand-sub">Osbourne</span>
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="#discografia">Discografia</a></li>
+                <li><a href="#frases">Frases</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a class="btn btn-outline" href="#cta">Ouça agora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero" aria-labelledby="titulo-hero">
+            <div class="bats" aria-hidden="true">
+                <span class="bat" style="--d:0s"></span>
+                <span class="bat" style="--d:2s"></span>
+                <span class="bat" style="--d:4s"></span>
+            </div>
+            <div class="hero-inner">
+                <h1 id="titulo-hero" class="headline">Príncipe das Trevas</h1>
+                <p class="kicker">Sombras, riffs e imortalidade do metal.</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="#discografia">Explorar</a>
+                    <a class="btn btn-ghost" href="#frases">Frases</a>
+                </div>
+            </div>
+            <div class="hero-runes" aria-hidden="true"></div>
+        </section>
+
+        <section id="discografia" class="section">
+            <div class="container">
+                <h2 class="section-title">Discografia (seleção)</h2>
+                <p class="section-sub">Alguns álbuns marcantes para iniciar a jornada.</p>
+                <div class="grid albums">
+                    <article class="card">
+                        <h3 class="album-title">Blizzard of Ozz <span>1980</span></h3>
+                        <p>Clássico absoluto com guitarras icônicas e atmosferas sombrias.</p>
+                        <a class="link" href="#cta">Ouvir</a>
+                    </article>
+                    <article class="card">
+                        <h3 class="album-title">Diary of a Madman <span>1981</span></h3>
+                        <p>Épico e teatral, com camadas que arrepiam.</p>
+                        <a class="link" href="#cta">Ouvir</a>
+                    </article>
+                    <article class="card">
+                        <h3 class="album-title">No More Tears <span>1991</span></h3>
+                        <p>Produção pesada com melodias inesquecíveis.</p>
+                        <a class="link" href="#cta">Ouvir</a>
+                    </article>
+                    <article class="card">
+                        <h3 class="album-title">Ordinary Man <span>2020</span></h3>
+                        <p>Reflexivo e nostálgico, mantendo o espírito indomável.</p>
+                        <a class="link" href="#cta">Ouvir</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="frases" class="section alt">
+            <div class="container">
+                <h2 class="section-title">Frases</h2>
+                <ul class="quotes">
+                    <li>“You can't kill rock and roll.”</li>
+                    <li>“Being sober on a bus is, frankly, boring.”</li>
+                    <li>“I am Ozzy Osbourne, and I am the Prince of Darkness.”</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container two-col">
+                <div>
+                    <h2 class="section-title">Sobre o legado</h2>
+                    <p>
+                        Um tributo visual inspirado na estética gótica e sombria que acompanha
+                        a trajetória de Ozzy Osbourne. Tipografia dramática, brilhos sutis e
+                        elementos místicos reforçam a aura do metal clássico.
+                    </p>
+                    <p>
+                        Este é um projeto não-oficial, criado por fã para fã — feito com amor
+                        e respeito. 🖤
+                    </p>
+                </div>
+                <div class="sigil" aria-hidden="true">
+                    <div class="cross"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="section cta">
+            <div class="container">
+                <h2 class="section-title">Aperte o play</h2>
+                <p>Entre nas sombras: escolha sua plataforma favorita e aumente o volume.</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="#">Spotify</a>
+                    <a class="btn btn-outline" href="#">Apple Music</a>
+                    <a class="btn btn-ghost" href="#">YouTube</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Feito com ☠️ por um fã. Este site é um tributo não-oficial.</p>
+    </footer>
+
+    <script>
+        // Menu responsivo simples
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            links.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
