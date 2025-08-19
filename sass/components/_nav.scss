@@ -1,0 +1,66 @@
+@use '../abstract/index.scss' as i;
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: i.$bg-header;
+    backdrop-filter: i.$filter-bg-header;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    .nav {
+        @include i.flex-layout(row, center, space-between);
+        gap: 1rem;
+        max-width: 1100px;
+        margin: auto;
+        padding: i.$spacing-4;
+
+        .brand {
+            @include i.flex-layout(flex, baseline);
+            gap: i.$padding-small;
+            text-decoration: none;
+
+            .brand-main {
+                font-family: "UnifrakturMaguntia", cursive;
+                font-size: i.$font-size-h2;
+                color: i.$gold;
+                text-shadow: 0 0 i.$font-size-body i.$brand-shadow;
+            }
+
+            .brand-sub {
+                font-family: "Cinzel", serif;
+                letter-spacing: i.$spacing-1;
+                text-transform: uppercase;
+                font-size: i.$font-size-caption;
+                color: i.$muted;
+            }
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: i.$ink;
+            font-size: i.$font-size-h6;
+            padding: i.$spacing-125 i.$spacing-3;
+            border-radius: 0.6rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: i.$padding-small;
+
+            a {
+                color: i.$ink;
+                text-decoration: none;
+                font-weight: 600;
+                opacity: 0.9;
+
+                &:hover {
+                    color: i.$gold
+                }
+            }
+        }
+    }
+}
