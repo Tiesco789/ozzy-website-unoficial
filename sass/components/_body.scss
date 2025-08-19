@@ -1,0 +1,15 @@
+@use '../abstract/colors' as c;
+@use '../abstract/gradients' as g;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    color: c.$ink;
+    @include g.gradient-bg;
+    overflow-x: hidden;
+}

@@ -1,42 +1,5 @@
-:root {
-    --bg: #0a0a0f;
-    --bg-2: #0e0e15;
-    --ink: #e5e7eb;
-    --muted: #a3a3a3;
-    --gold: #d4af37;
-    --purple: #6b21a8;
-    --crimson: #7f1d1d;
-    --card: #111119;
-    --ring: rgba(212, 175, 55, 0.45);
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-* {
-    box-sizing: border-box;
-}
 
-html,
-body {
-    height: 100%;
-}
 
-body {
-    margin: 0;
-    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
-        Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    color: var(--ink);
-    background: radial-gradient(
-            1200px 600px at 10% -10%,
-            rgba(107, 33, 168, 0.2),
-            transparent 60%
-        ),
-        radial-gradient(
-            800px 400px at 90% -20%,
-            rgba(212, 175, 55, 0.15),
-            transparent 60%
-        ),
-        linear-gradient(180deg, var(--bg), var(--bg-2));
-    overflow-x: hidden;
-}
 .headline {
     font-family: "Cinzel", serif;
     font-weight: 900;

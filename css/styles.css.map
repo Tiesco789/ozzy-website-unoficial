@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/abstract/_reset.scss","../sass/components/_body.scss","../sass/abstract/_colors.scss","../sass/abstract/_gradients.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UACA,gCCEA,YAGJ,KACI,SACA,0EACA,MCTE,QCKF,6NFMA","file":"styles.css"}
